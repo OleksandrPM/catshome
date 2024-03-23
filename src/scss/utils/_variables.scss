@@ -1,7 +1,12 @@
 // Breakpoints
-$mobile-width: 480px;
+$mobile-width: 320px;
 $tablet-width: 768px;
-$desktop-width: 1200px;
+$desktop-width: 1440px;
+
+// Viewwidth coefficients
+$vw-mobile-coef: 3.2px/1vw;
+$vw-tablet-coef: 7.68px/1vw;
+$vw-desktop-coef: 14.4px/1vw;
 
 // Fonts
 @font-face {
@@ -22,10 +27,11 @@ $title-font: "Montserrat-bold", sans-serif;
 $regular-font: "Montserrat-normal", sans-serif;
 
 // Colors
-$common-white: #fff;
+$common-white: #ffffff;
 $orange: #f07f2e;
 $grey: #2c2c2c;
 $common-black: #2f2f37;
+$common-black-04: rgba(47, 47, 55, 0.4);
 $blue-light: #ecf6ff;
 $navy: #d8def8;
 $scarlet: #fae8ea;

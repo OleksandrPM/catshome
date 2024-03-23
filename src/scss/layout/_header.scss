@@ -1,0 +1,9 @@
+.header-container {
+  padding-top: calc(8px / $vw-mobile-coef);
+  padding-bottom: calc(8px / $vw-mobile-coef);
+
+  @media screen and (min-width: $tablet-width) {
+    padding-top: calc(16px / $vw-tablet-coef);
+    padding-bottom: calc(16px / $vw-tablet-coef);
+  }
+}

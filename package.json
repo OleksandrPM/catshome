@@ -12,5 +12,8 @@
     "sass": "^1.71.1",
     "vite": "^5.1.4",
     "vite-plugin-handlebars": "^2.0.0"
+  },
+  "dependencies": {
+    "modern-normalize": "^2.0.0"
   }
 }
