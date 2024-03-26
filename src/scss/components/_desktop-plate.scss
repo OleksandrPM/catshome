@@ -1,0 +1,29 @@
+.desktop-plate {
+  @media screen and (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns:
+      calc(744px / $vw-desktop-coef) calc(24px / $vw-desktop-coef)
+      1fr;
+    grid-template-rows: auto calc(60px / $vw-desktop-coef) auto;
+
+    width: calc(1128px / $vw-desktop-coef);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: calc(80px / $vw-desktop-coef);
+
+    & .articles {
+      grid-column: 1/2;
+      grid-row: 1/4;
+    }
+
+    & .socials {
+      grid-column: 3/4;
+      grid-row: 1/2;
+    }
+
+    & .videos {
+      grid-column: 3/4;
+      grid-row: 3/4;
+    }
+  }
+}
