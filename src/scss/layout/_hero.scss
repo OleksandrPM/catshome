@@ -1,15 +1,3 @@
-.hero {
-  margin-bottom: calc(96px / $vw-mobile-coef);
-
-  @media screen and (min-width: $tablet-width) {
-    margin-bottom: calc(96px / $vw-tablet-coef);
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    margin-bottom: calc(80px / $vw-desktop-coef);
-  }
-}
-
 .hero_posts {
   display: grid;
   row-gap: calc(12px / $vw-mobile-coef);

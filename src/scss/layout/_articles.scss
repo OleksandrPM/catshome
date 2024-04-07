@@ -1,16 +1,6 @@
-.articles {
-  margin-bottom: calc(96px / $vw-mobile-coef);
-
-  @media screen and (min-width: $tablet-width) {
-    margin-bottom: calc(96px / $vw-tablet-coef);
-  }
-
+.articles .container {
   @media screen and (min-width: $desktop-width) {
-    margin-bottom: 0;
-
-    // & .articles_container {
-    //   width: 50px;
-    // }
+    width: 100%;
   }
 }
 
