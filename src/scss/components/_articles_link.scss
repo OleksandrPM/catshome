@@ -1,3 +1,57 @@
+.articles_item {
+  &:first-child .articles_link::before {
+    background-image: url(/src/images/articles/1.webp);
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+      only screen and (min--moz-device-pixel-ratio: 2),
+      only screen and (min-device-pixel-ratio: 2),
+      only screen and (-webkit-min-device-pixel-ratio: 2),
+      only screen and (min-resolution: 192dpi),
+      only screen and (min-resolution: 2dppx) {
+      background-image: url(/src/images/articles/1@2x.webp);
+    }
+  }
+
+  &:nth-child(2) .articles_link::before {
+    background-image: url(/src/images/articles/2.webp);
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+      only screen and (min--moz-device-pixel-ratio: 2),
+      only screen and (min-device-pixel-ratio: 2),
+      only screen and (-webkit-min-device-pixel-ratio: 2),
+      only screen and (min-resolution: 192dpi),
+      only screen and (min-resolution: 2dppx) {
+      background-image: url(/src/images/articles/2@2x.webp);
+    }
+  }
+
+  &:nth-child(3) .articles_link::before {
+    background-image: url(/src/images/articles/3.webp);
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+      only screen and (min--moz-device-pixel-ratio: 2),
+      only screen and (min-device-pixel-ratio: 2),
+      only screen and (-webkit-min-device-pixel-ratio: 2),
+      only screen and (min-resolution: 192dpi),
+      only screen and (min-resolution: 2dppx) {
+      background-image: url(/src/images/articles/3@2x.webp);
+    }
+  }
+
+  &:nth-child(4) .articles_link::before {
+    background-image: url(/src/images/articles/4.webp);
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+      only screen and (min--moz-device-pixel-ratio: 2),
+      only screen and (min-device-pixel-ratio: 2),
+      only screen and (-webkit-min-device-pixel-ratio: 2),
+      only screen and (min-resolution: 192dpi),
+      only screen and (min-resolution: 2dppx) {
+      background-image: url(/src/images/articles/4@2x.webp);
+    }
+  }
+}
+
 .articles_link {
   display: grid;
   grid-template-columns: 1fr;
@@ -29,8 +83,9 @@
     height: calc(170px / $vw-mobile-coef);
     border-radius: calc(16px / $vw-mobile-coef);
 
-    // del
-    background-color: aqua;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
 
     @media screen and (min-width: $tablet-width) {
       grid-column: 1/2;
