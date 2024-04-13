@@ -1,0 +1,16 @@
+.section-title {
+  font-family: $title-font;
+  font-size: calc(28px / $vw-mobile-coef);
+  line-height: calc(36 / 28);
+  letter-spacing: calc(0.5px / $vw-mobile-coef);
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: calc(28px / $vw-tablet-coef);
+    letter-spacing: calc(0.5px / $vw-tablet-coef);
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    font-size: calc(28px / $vw-desktop-coef);
+    letter-spacing: calc(0.5px / $vw-desktop-coef);
+  }
+}

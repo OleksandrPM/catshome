@@ -1,0 +1,97 @@
+.socials_link {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: calc(8px / $vw-mobile-coef);
+
+  @media screen and (min-width: $tablet-width) {
+    justify-content: center;
+    padding: calc(12px / $vw-tablet-coef);
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    justify-content: start;
+    padding: calc(8px / $vw-desktop-coef);
+  }
+}
+
+.socials_icons-thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: calc(32px / $vw-mobile-coef);
+  height: calc(32px / $vw-mobile-coef);
+  margin-right: calc(16px / $vw-mobile-coef);
+
+  border-style: solid;
+  border-width: calc(1px / $vw-mobile-coef);
+  border-radius: calc(8px / $vw-mobile-coef);
+  border-color: $common-black;
+
+  @media screen and (min-width: $tablet-width) {
+    position: absolute;
+    top: calc(8px / $vw-tablet-coef);
+    left: calc(8px / $vw-tablet-coef);
+
+    width: calc(32px / $vw-tablet-coef);
+    height: calc(32px / $vw-tablet-coef);
+    margin-right: 0;
+
+    border-width: calc(1px / $vw-tablet-coef);
+    border-radius: calc(8px / $vw-tablet-coef);
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    width: calc(32px / $vw-desktop-coef);
+    height: calc(32px / $vw-desktop-coef);
+    margin-right: calc(28px / $vw-desktop-coef);
+
+    border-width: calc(1px / $vw-desktop-coef);
+    border-radius: calc(8px / $vw-desktop-coef);
+  }
+}
+
+.socials_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: calc(16px / $vw-mobile-coef);
+  height: calc(16px / $vw-mobile-coef);
+
+  @media screen and (min-width: $tablet-width) {
+    width: calc(16px / $vw-tablet-coef);
+    height: calc(16px / $vw-tablet-coef);
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: calc(16px / $vw-desktop-coef);
+    height: calc(16px / $vw-desktop-coef);
+  }
+}
+
+.socials_amount {
+  font-family: $regular-font;
+  font-size: calc(16px / $vw-mobile-coef);
+  line-height: calc(24 / 16);
+  letter-spacing: calc(0.5px / $vw-mobile-coef);
+
+  color: $common-black;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: calc(16px / $vw-tablet-coef);
+    letter-spacing: calc(0.5px / $vw-tablet-coef);
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    font-size: calc(16px / $vw-desktop-coef);
+    letter-spacing: calc(0.5px / $vw-desktop-coef);
+  }
+}
