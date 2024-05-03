@@ -1,12 +1,14 @@
+@use "sass:math";
+
 // Breakpoints
 $mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1440px;
 
 // Viewwidth coefficients
-$vw-mobile-coef: 3.2px/1vw;
-$vw-tablet-coef: 7.68px/1vw;
-$vw-desktop-coef: 14.4px/1vw;
+$vw-mobile-coef: math.div(3.2px, 1vw);
+$vw-tablet-coef: math.div(7.68px, 1vw);
+$vw-desktop-coef: math.div(14.4px, 1vw);
 
 // Fonts
 @font-face {

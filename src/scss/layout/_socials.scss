@@ -2,15 +2,15 @@
   & .container {
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: (24px / $vw-mobile-coef);
+    row-gap: calc(24px / $vw-mobile-coef);
 
     @media screen and (min-width: $tablet-width) {
-      row-gap: (24px / $vw-tablet-coef);
+      row-gap: calc(24px / $vw-tablet-coef);
     }
 
     @media screen and (min-width: $desktop-width) {
       width: 100%;
-      row-gap: (24px / $vw-desktop-coef);
+      row-gap: calc(24px / $vw-desktop-coef);
     }
   }
 }
