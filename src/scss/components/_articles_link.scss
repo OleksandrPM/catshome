@@ -59,6 +59,22 @@
     auto calc(20px / $vw-mobile-coef) auto calc(12px / $vw-mobile-coef)
     auto;
 
+  border-radius: calc(16px / $vw-mobile-coef);
+
+  transition-property: transform, padding-bottom;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+
+  &:hover,
+  &:active {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: scale(1.01);
+
+    @media screen and (max-width: calc($tablet-width - 0.02px)) {
+      padding-bottom: calc(8px / $vw-mobile-coef);
+    }
+  }
+
   @media screen and (min-width: $tablet-width) {
     grid-template-columns:
       auto calc(24px / $vw-tablet-coef)
@@ -66,6 +82,8 @@
     grid-template-rows:
       auto calc(12px / $vw-tablet-coef)
       1fr;
+
+    border-radius: calc(16px / $vw-tablet-coef);
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -75,6 +93,8 @@
     grid-template-rows:
       auto calc(12px / $vw-desktop-coef)
       auto;
+
+    border-radius: calc(16px / $vw-desktop-coef);
   }
 
   &::before {

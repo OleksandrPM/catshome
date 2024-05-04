@@ -34,37 +34,27 @@
 }
 
 .socials_item {
-  border-radius: calc(16px / $vw-mobile-coef);
-
-  @media screen and (min-width: $tablet-width) {
-    border-radius: calc(16px / $vw-tablet-coef);
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    border-radius: calc(16px / $vw-desktop-coef);
-  }
-
-  &:first-child {
+  &:first-child .socials_link {
     background-color: $navy;
   }
 
-  &:nth-child(2) {
+  &:nth-child(2) .socials_link {
     background-color: $pink;
   }
 
-  &:nth-child(3) {
+  &:nth-child(3) .socials_link {
     background-color: $scarlet;
   }
 
-  &:nth-child(4) {
+  &:nth-child(4) .socials_link {
     background-color: $turquoise;
   }
 
-  &:nth-child(5) {
+  &:nth-child(5) .socials_link {
     background-color: $yellow;
   }
 
-  &:nth-child(6) {
+  &:nth-child(6) .socials_link {
     background-color: $lilac;
   }
 }

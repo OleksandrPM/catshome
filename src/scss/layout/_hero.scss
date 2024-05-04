@@ -24,9 +24,6 @@
     }
 
     & .hero_card {
-      background-size: 100% auto;
-      background-repeat: no-repeat;
-      background-position: center;
       background-image: url(/src/images/hero/mobile/picture_1.webp);
 
       @media only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -72,9 +69,6 @@
 
   &:nth-child(2) {
     & .hero_card {
-      background-size: 100% auto;
-      background-repeat: no-repeat;
-      background-position: center;
       background-image: url(/src/images/hero/mobile/picture_2.webp);
 
       @media only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -116,9 +110,6 @@
 
   &:nth-child(3) {
     & .hero_card {
-      background-size: 100% auto;
-      background-repeat: no-repeat;
-      background-position: center;
       background-image: url(/src/images/hero/mobile/picture_3.webp);
 
       @media only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -167,6 +158,20 @@
 
   overflow: hidden;
   border-radius: calc(16px / $vw-mobile-coef);
+
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  transition-property: transform;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+
+  &:hover,
+  &:active {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: scale(1.01);
+  }
 
   @media screen and (min-width: $tablet-width) {
     padding-top: calc(177px / $vw-tablet-coef);
