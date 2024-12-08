@@ -3,7 +3,7 @@
 
 It's an educational project in the Fullstack Developer`s course from [GoIT](https://html-m-lp-ua.goit.global/).
 
-The theme is css grid property.
+The theme is the css grid property.
 
 The project is built on [Vite](https://vitejs.dev) and has a responsive [layout](https://www.figma.com/file/3DeLKaPDewHZeMRYaoU28o/Grids?type=design&mode=design&t=z602iCJ8mNMfG06z-0).
 
